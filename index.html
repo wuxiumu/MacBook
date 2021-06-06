@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>repsNote</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="Keywords" Content="repsNote">
+    <meta name="Description" Content="repsNote">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./public/vue.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico"/>
+    <link rel="bookmark" href="./public/favicon.ico"/>
+  </head>
+  <body>
+    <div id="app"> 正在加载,请稍后。。。 </div>
+   
+    <script>
+      window.$docsify = {
+        name: "repsNote",//侧边栏标题
+        repo: 'https://gitee.com/CircleCI/repsNote',
+        maxLevel: 5,
+        subMaxLevel: 4,
+        // loadNavbar: true,//顶部导航
+        loadSidebar: true, // 加载自定义侧边栏
+        mergeNavbar: true,
+        search: { // default默认搜索
+            noData:{
+                '/':'找不到结果',
+            },
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            paths: 'auto',
+            placeholder:{
+                '/':'请输入搜索内容',
+            },
+        },
+        alias:{
+            '/.*/_sidebar.md': '/_sidebar.md',
+            //'/.*/_navbar.md': '/_navbar.md',
+        },  
+        count:{
+            countable:true,
+            fontsize:'0.9em',
+            color:'rgb(90,90,90)',
+            language:'chinese'
+        }
+      };
+    </script>
+    <script src="./public/docsify.min.js"></script>
+    <script src="./public/components//search.min.js"></script>
+    <script src="./public/components/prism-json.js"></script>
+    <script src="./public/components/prism-bash.js"></script>
+    <script src="./public/components/prism-sql.js"></script>
+    <script src="./public/components/prism-php.js"></script>
+    <script src="./public/components/external-script.min.js"></script>
+    <script src="./public/components/emoji.js"></script>
+    <script src="./public/components/zoom-image.min.js"></script>
+    <script src="./public/components/docsify-pagination.min.js"></script>
+    <script src="./public/components/countable.js"></script>
+    <script src="./public/components/docsify-copy-code.js"></script>
+
+  </body>
+</html>
